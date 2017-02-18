@@ -14,4 +14,9 @@ RSpec.describe String do
         text = text.margin(2)
         expect(text).to eq('  hello')
     end
+    it "should add margin with custom separator" do
+        text = 'hello'
+        text = text.margin(2, '-')
+        expect(text).to eq('--hello')
+    end
 end
