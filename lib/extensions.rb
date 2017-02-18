@@ -17,6 +17,7 @@ module PrettyMonkey
         end
 
         def margin(times, char = ' ')
+            return self if times <= 0
             char * times + self
         end
     end

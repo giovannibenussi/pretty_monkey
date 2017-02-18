@@ -29,4 +29,9 @@ RSpec.describe String do
         text = text.margin(2, '-')
         expect(text).to eq('--hello')
     end
+    it "shouldn't add margin because the passed parameter is negative" do
+        text = 'hello'
+        text = text.margin(-1)
+        expect(text).to eq('hello')
+    end
 end
