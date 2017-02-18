@@ -8,6 +8,14 @@ module PrettyMonkey
             self.replace self.remove_consonants
         end
 
+        def remove_vocals
+            self.gsub(/[aeiou]/, '')
+        end
+
+        def remove_vocals!
+            self.replace self.remove_vocals
+        end
+
         def margin(times, char = ' ')
             char * times + self
         end

@@ -1,4 +1,14 @@
 RSpec.describe String do
+    it "remove the vocals of the string" do
+        text = 'hello world'
+        text = text.remove_vocals
+        expect(text).to eq('hll wrld')
+    end
+    it "remove the vocals of the string (bang version)" do
+        text = 'hello world'
+        text.remove_vocals!
+        expect(text).to eq('hll wrld')
+    end
     it "remove the consonants of the string" do
         text = 'hello world'
         text = text.remove_consonants
