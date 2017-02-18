@@ -14,4 +14,6 @@ And then include it in your ruby file:
 ### remove_consonants
 Remove all the consonants inside a string:
 
-`'hello world'.remove_consonants # => 'eoo'`
+```ruby
+'hello world'.remove_consonants # => 'eoo'
+```
