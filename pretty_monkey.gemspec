@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
     s.description = ""
     s.authors     = ["Giovanni Benussi"]
     s.email       = 'giovanni.benussi@usach.cl'
-    s.files       = ["lib/pretty_monkey.rb", "lib/extensions.rb"]
+    s.files       = Dir["lib/**/*"]
     s.homepage    =
     'http://rubygems.org/gems/pretty_monkey'
     s.license       = 'MIT'
