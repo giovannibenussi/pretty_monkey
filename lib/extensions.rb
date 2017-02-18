@@ -8,7 +8,7 @@ module PrettyMonkey
             self.replace self.remove_consonants
         end
 
-        def padding(times, char = ' ')
+        def margin(times, char = ' ')
             char * times + self
         end
     end
