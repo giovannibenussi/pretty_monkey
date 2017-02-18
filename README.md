@@ -24,3 +24,11 @@ There's also a `remove_vocals` method that removes all vocals inside a string:
 ```ruby
 'hello world'.remove_vocals # => 'hll wrld'
 ```
+
+### margin
+Adds whitespace (or any custom character) at the beginning of the string:
+
+```ruby
+'hello world'.margin(2) # => '  hello world'
+'hello world'.margin(2, '-') # => '--hello world'
+```
